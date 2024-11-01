@@ -1,0 +1,135 @@
+.button,
+button {
+    display: inline-block;
+    text-decoration: none;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    width: 300px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 14px 12px 12px 12px;
+    letter-spacing: 0.1px;
+    white-space: wrap;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: all 0.40s ease;
+}
+
+.button:hover {
+    transform: scale(1.02);
+}
+
+.button:focus {
+    outline: none;
+    opacity: 0.9;
+    box-shadow: 0 0 0 3px rgb(255, 255, 255);
+}
+
+
+.icon {
+    padding: 0px 1px 3.5px 0px;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+
+.button.button-superpeer {
+    color: #202020;
+    background-color: #FFC32C;
+}
+
+
+.button.button-fiverr {
+    color: #FFFFFF;
+    background-color: #1DBF73;
+}
+
+
+.button.button-upwork {
+    color: #FFFFFF;
+    background-color: #14A800;
+}
+
+
+.button.button-buy-me-a-coffee {
+    color: #202020;
+    background-color: #FFDD00;
+}
+
+
+.button.button-linkedin {
+    color: #FFFFFF;
+    background-color: #2867B2;
+}
+
+
+.button.button-discord {
+    color: #FFFFFF;
+    background-color: #5B67EA;
+}
+
+
+.button.button-x {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+
+.button.button-github {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+
+.button.button-medium {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+
+.button.button-daily-dev {
+    color: #F5F5F5;
+    background-color: #151618;
+}
+
+
+.button.button-substack {
+    color: #FFFFFF;
+    background-color: #FF6719;
+}
+
+
+.button.button-dev-to {
+    color: #000000;
+    background-color: #F5F5F5;
+}
+
+
+.button.button-stack-overflow {
+    color: #E5853D;
+    background-color: #FFFFFF;
+}
+
+
+.button.button-gmail {
+    color: #303030;
+    background-color: #FFFFFF;
+}
+
+
+.button.button-ays {
+    color: #FFFFFF;
+    background-color: #2A3E63;
+}
+
+
+.button.button-gb {
+    color: #FFFFFF;
+    background-color: #57a74d;
+}

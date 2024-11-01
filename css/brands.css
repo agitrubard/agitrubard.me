@@ -68,6 +68,10 @@ button {
     background-color: #2867B2;
 }
 
+.icon.icon-linkedin {
+    padding: 0 1px 4px 3px;
+}
+
 
 .button.button-x {
     color: #FFFFFF;

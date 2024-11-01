@@ -27,7 +27,6 @@ button {
 .button:focus {
     outline: none;
     opacity: 0.9;
-    box-shadow: 0 0 0 3px rgb(255, 255, 255);
 }
 
 

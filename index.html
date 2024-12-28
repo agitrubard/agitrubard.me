@@ -14,9 +14,17 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
           rel="stylesheet">
     <link rel="icon" type="image/png" href="images/icons/profile.svg">
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
 </head>
 
 <body>
+<div id="genericModal" onclick="closeModal(event)">
+    <div id="modalContent">
+        <iframe id="modalIframe" src=""></iframe>
+    </div>
+</div>
+
 <div class="container">
     <div class="row">
         <br>
@@ -33,7 +41,8 @@
         </p>
 
         <a class="button button-google-calendar"
-           href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ12Jp7xyMV8O9-vuGOcv8U73F2rHS9RO5kBnLsOlQ-IzHFSSBuSdebl99PdZbi3VslIul4F97WJ?gv=true"
+           href="#"
+           onclick="openModal('https://calendar.google.com/calendar/appointments/schedules/AcZssZ12Jp7xyMV8O9-vuGOcv8U73F2rHS9RO5kBnLsOlQ-IzHFSSBuSdebl99PdZbi3VslIul4F97WJ?gv=true'); return false;"
            target="_blank"
            rel="noopener" role="button">
             <img class="icon"
@@ -219,12 +228,28 @@
         <br>
         <br>
 
-        <p style="font-size: small">20241228.0</p>
-
     </div>
 </div>
 </body>
 <script>
     document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+<script>
+    function openModal(url) {
+        const modal = document.getElementById('genericModal');
+        const iframe = document.getElementById('modalIframe');
+        iframe.src = url;
+        modal.style.display = 'flex';
+    }
+
+    function closeModal(event) {
+        const modal = document.getElementById('genericModal');
+
+        if (event.target === event.currentTarget) {
+            modal.style.display = 'none';
+            document.getElementById('modalIframe').src = '';
+            iframe.src = 'about:blank';
+        }
+    }
 </script>
 </html>

@@ -14,12 +14,19 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
           rel="stylesheet">
     <link rel="icon" type="image/png" href="images/icons/profile.svg">
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
 </head>
 
 <body>
+<div id="genericModal" onclick="closeModal(event)">
+    <div id="modalContent">
+        <iframe id="modalIframe" src=""></iframe>
+    </div>
+</div>
+
 <div class="container">
     <div class="row">
-
         <br>
         <br>
         <br>
@@ -33,6 +40,20 @@
             He also provides Technical Mentoring, Consulting and End to End Project Management Consulting supports.
         </p>
 
+        <a class="button button-google-calendar"
+           href="#"
+           onclick="openModal('https://calendar.google.com/calendar/appointments/schedules/AcZssZ12Jp7xyMV8O9-vuGOcv8U73F2rHS9RO5kBnLsOlQ-IzHFSSBuSdebl99PdZbi3VslIul4F97WJ?gv=true'); return false;"
+           target="_blank"
+           rel="noopener" role="button">
+            <img class="icon"
+                 aria-hidden="true"
+                 src="images/icons/google-calendar.png"
+                 alt="Google Calendar Logo"
+            >
+            Randevu Oluştur
+        </a>
+
+        <br>
         <br>
 
         <a class="button button-buy-me-a-coffee" href="https://buymeacoffee.com/n8fyqpyf6md" target="_blank"
@@ -61,7 +82,8 @@
         <br>
         <br>
 
-        <a class="button button-linkedin" href="https://linkedin.com/in/agitrubard" target="_blank" rel="noopener" role="button">
+        <a class="button button-linkedin" href="https://linkedin.com/in/agitrubard" target="_blank" rel="noopener"
+           role="button">
             Connect on Linked<img class="icon icon-linkedin"
                                   aria-hidden="true"
                                   src="images/icons/linkedin.svg"
@@ -211,5 +233,24 @@
 </body>
 <script>
     document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+<script>
+    function openModal(url) {
+        const modal = document.getElementById('genericModal');
+        const iframe = document.getElementById('modalIframe');
+        iframe.src = url;
+        modal.style.display = 'flex';
+    }
+
+    function closeModal(event) {
+        const modalContent = document.getElementById('modalContent');
+
+        if (!modalContent.contains(event.target)) {
+            const modal = document.getElementById('genericModal');
+            const iframe = document.getElementById('modalIframe');
+            iframe.src = '';
+            modal.style.display = 'none';
+        }
+    }
 </script>
 </html>

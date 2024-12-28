@@ -38,6 +38,12 @@ button {
 }
 
 
+.button.button-google-calendar {
+    color: #1A73E8;
+    background-color: #FFFFFF;
+}
+
+
 .button.button-buy-me-a-coffee {
     color: #202020;
     background-color: #FFDD00;

@@ -5,7 +5,8 @@
     <title>Agit Rubar Demir</title>
     <meta name="description" content="https://agitrubard.me">
     <meta name="author" content="Agit Rubar Demir">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton-dark.css">
     <link rel="stylesheet" href="css/brands.css">
@@ -15,6 +16,29 @@
           rel="stylesheet">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="icon" type="image/png" href="images/icons/profile.svg">
+    <style>
+        /* Safari için özel düzeltmeler */
+        @supports (-webkit-touch-callout: none) {
+            body {
+                width: 100%;
+                overflow-x: hidden;
+                -webkit-text-size-adjust: 100%;
+            }
+
+            .container {
+                width: 100%;
+                max-width: 100%;
+                padding: 0 15px;
+                box-sizing: border-box;
+            }
+
+            .version-container {
+                margin-top: 40px;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -217,9 +241,9 @@
             Gelecek Bilimde
         </a>
 
-        <br>
-
-        <span class="version">20250405.3</span>
+        <div class="version-container">
+            <span class="version">20250405.2</span>
+        </div>
     </div>
 </div>
 </body>
@@ -227,4 +251,3 @@
     document.addEventListener('contextmenu', event => event.preventDefault());
 </script>
 </html>
-

@@ -88,15 +88,27 @@ p {
     margin-top: 0;
 }
 
-.text.link {
-    color: #1F2023;
-    font-size: 90%;
+.text {
     text-align: left;
+    color: #1F2023;
+    width: 100%;
 }
 
-.text.subtext {
-    font-size: 80%;
+.link {
 }
+
+.subtext {
+    margin-bottom: 1rem;
+    font-size: 85%;
+}
+
+.version {
+    display: inline-block;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 85%;
+}
+
 
 code {
     padding: 0.2rem 0.5rem;
@@ -115,8 +127,7 @@ pre > code {
 }
 
 
-button,
-.button {
+button, .button {
     margin-bottom: 1rem;
 }
 
@@ -170,6 +181,7 @@ hr {
     object-fit: cover;
     background-position: center;
     border-radius: 50%;
+    margin-top: 4rem;
 }
 
 @font-face {

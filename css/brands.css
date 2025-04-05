@@ -1,134 +1,120 @@
 .button,
 button {
-  display: inline-block;
-  text-decoration: none;
-  height: 100%;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 18px;
-  width: 300px;
-  font-weight: 700;
-  line-height: 20px;
-  padding: 14px 12px 12px 12px;
-  letter-spacing: 0;
-  white-space: wrap;
-  outline: none;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  cursor: pointer;
-  transform-style: preserve-3d;
-  transition: all 0.40s ease;
+    display: inline-block;
+    text-decoration: none;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    width: 300px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 14px 12px 12px 12px;
+    letter-spacing: 0;
+    white-space: wrap;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: all 0.40s ease;
 }
 
 .button:hover {
-  transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 .button:focus {
-  outline: none;
-  opacity: 0.9;
+    outline: none;
+    opacity: 0.9;
 }
+
 
 .icon {
-  padding: 0 1px 4px 0;
-  vertical-align: middle;
-  width: 20px;
-  height: 20px;
+    padding: 0 1px 4px 0;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
 }
+
 
 .button.button-google-calendar {
-  color: #1a73e8;
-  background-color: #ffffff;
+    color: #1A73E8;
+    background-color: #FFFFFF;
 }
+
 
 .button.button-buy-me-a-coffee {
-  color: #202020;
-  background-color: #ffdd00;
+    color: #202020;
+    background-color: #FFDD00;
 }
 
+
 .button.button-linkedin {
-  color: #ffffff;
-  background-color: #2867b2;
+    color: #FFFFFF;
+    background-color: #2867B2;
 }
 
 .icon.icon-linkedin {
-  padding: 0 1px 4px 3px;
+    padding: 0 1px 4px 3px;
 }
+
 
 .button.button-x {
-  color: #ffffff;
-  background-color: #000000;
+    color: #FFFFFF;
+    background-color: #000000;
 }
+
 
 .button.button-github {
-  color: #ffffff;
-  background-color: #000000;
+    color: #FFFFFF;
+    background-color: #000000;
 }
+
 
 .button.button-medium {
-  color: #000000;
-  background-color: #ffffff;
+    color: #000000;
+    background-color: #FFFFFF;
 }
+
 
 .button.button-daily-dev {
-  color: #f5f5f5;
-  background-color: #151618;
+    color: #F5F5F5;
+    background-color: #151618;
 }
+
 
 .button.button-substack {
-  color: #ffffff;
-  background-color: #ff6719;
+    color: #FFFFFF;
+    background-color: #FF6719;
 }
+
 
 .button.button-dev-to {
-  color: #000000;
-  background-color: #f5f5f5;
+    color: #000000;
+    background-color: #F5F5F5;
 }
+
 
 .button.button-stack-overflow {
-  color: #e5853d;
-  background-color: #ffffff;
+    color: #E5853D;
+    background-color: #FFFFFF;
 }
+
 
 .button.button-gmail {
-  color: #303030;
-  background-color: #ffffff;
+    color: #303030;
+    background-color: #FFFFFF;
 }
+
 
 .button.button-ays {
-  color: #ffffff;
-  background-color: #2a3e63;
+    color: #FFFFFF;
+    background-color: #2A3E63;
 }
+
 
 .button.button-gb {
-  color: #ffffff;
-  background-color: #57a74d;
-}
-
-/* Add responsive button styles */
-@media (max-width: 480px) {
-  .button,
-  button {
-    width: 100%; /* Full width on mobile */
-    font-size: 16px; /* Slightly smaller font on mobile */
-    padding: 12px 8px 10px 8px; /* Reduced padding */
-  }
-
-  .icon {
-    width: 18px; /* Slightly smaller icons */
-    height: 18px;
-  }
-}
-
-@media (max-width: 320px) {
-  .button,
-  button {
-    font-size: 14px; /* Even smaller font on very small screens */
-    padding: 10px 6px 8px 6px; /* Minimal padding */
-  }
-
-  .icon {
-    width: 16px; /* Smaller icons on very small screens */
-    height: 16px;
-  }
+    color: #FFFFFF;
+    background-color: #57a74d;
 }

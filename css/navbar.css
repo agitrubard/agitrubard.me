@@ -76,23 +76,11 @@ html[style*="color-scheme: dark"] .nav-item:hover:not(.active) {
 /* Add responsive adjustments for smaller screens */
 @media (max-width: 480px) {
   .nav-container {
-    max-width: 95%; /* Increase width on small screens */
+    max-width: 90%; /* Allow more width on small screens */
   }
 
   .nav-item {
-    padding: 10px 6px; /* Further reduce padding on small screens */
-    font-size: 13px; /* Smaller font size on mobile */
-  }
-}
-
-@media (max-width: 320px) {
-  .nav-container {
-    max-width: 100%; /* Full width on very small screens */
-  }
-
-  .nav-item {
-    padding: 8px 4px; /* Minimal padding on very small screens */
-    font-size: 12px; /* Even smaller font size on very small screens */
+    padding: 12px 8px; /* Reduce padding on small screens */
   }
 }
 

@@ -5,8 +5,7 @@
     <title>Medium Articles</title>
     <meta name="description" content="https://agitrubard.me">
     <meta name="author" content="Agit Rubar Demir">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../css/normalize.css">
     <link rel="stylesheet" href="../../css/skeleton-white.css">
     <link rel="stylesheet" href="../../css/brands.css">
@@ -19,16 +18,16 @@
 </head>
 
 <body>
-<nav class="navbar">
-    <div class="nav-container">
-        <a href="../.." class="nav-item">Home</a>
-        <a href="" class="nav-item active">Medium Articles</a>
-    </div>
-</nav>
-<div class="container" role="main">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../.." class="nav-item">Home</a>
+            <a href="" class="nav-item active">Medium Articles</a>
+        </div>
+    </nav>
+<div class="container">
     <div class="row">
 
-        <img src="../../images/icons/medium.png" class="avatar" alt="Medium logo" loading="lazy">
+        <img src="../../images/icons/medium.png" class="avatar" srcset="../../images/icons/medium.png" alt="">
 
         <h1 role="heading">Agit Rubar Demir</h1>
 
@@ -111,40 +110,12 @@
            target="_blank" rel="noopener">JPA/Hibernate ile Veritabanı İşlemlerinde Ekstra Scriptlerden Kaçınmak</a>
         <a class="text subtext u-pull-left">Published on June 14, 2024</a>
 
-        <span class="version">20250405.4</span>
+        <span class="version">20250405.3</span>
     </div>
 </div>
 </body>
 <script>
     document.addEventListener('contextmenu', event => event.preventDefault());
-
-    function handleResize() {
-        const width = window.innerWidth;
-        const buttons = document.querySelectorAll('.button');
-        const links = document.querySelectorAll('.text.link');
-
-        if (width < 400) {
-            buttons.forEach(button => {
-                button.style.width = '100%';
-                button.style.fontSize = '16px';
-            });
-
-            links.forEach(link => {
-                link.style.fontSize = '15px';
-            });
-        } else {
-            buttons.forEach(button => {
-                button.style.width = '300px';
-                button.style.fontSize = '18px';
-            });
-
-            links.forEach(link => {
-                link.style.fontSize = '18px';
-            });
-        }
-    }
-
-    window.addEventListener('resize', handleResize);
-    handleResize();
 </script>
 </html>
+

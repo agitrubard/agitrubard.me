@@ -5,8 +5,7 @@
     <title>Agit Rubar Demir</title>
     <meta name="description" content="https://agitrubard.me">
     <meta name="author" content="Agit Rubar Demir">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton-dark.css">
     <link rel="stylesheet" href="css/brands.css">
@@ -25,11 +24,10 @@
         <a href="articles/medium" class="nav-item">Medium Articles</a>
     </div>
 </nav>
-<div class="container" role="main">
+<div class="container">
     <div class="row">
 
-        <img src="images/profile.png" class="avatar" srcset="images/profile.png 1x, images/profile.png 2x"
-             alt="Profile picture of Agit Rubar Demir" loading="lazy">
+        <img src="images/profile.png" class="avatar" srcset="images/profile.png 2x" alt="">
 
         <h1 role="heading">Agit Rubar Demir</h1>
 
@@ -221,31 +219,11 @@
 
         <br>
 
-        <span class="version">20250405.3</span>
+        <span class="version">20250405.2</span>
     </div>
 </div>
 </body>
 <script>
     document.addEventListener('contextmenu', event => event.preventDefault());
-
-    function handleResize() {
-        const width = window.innerWidth;
-        const buttons = document.querySelectorAll('.button');
-
-        if (width < 400) {
-            buttons.forEach(button => {
-                button.style.width = '100%';
-                button.style.fontSize = '16px';
-            });
-        } else {
-            buttons.forEach(button => {
-                button.style.width = '300px';
-                button.style.fontSize = '18px';
-            });
-        }
-    }
-
-    window.addEventListener('resize', handleResize);
-    handleResize();
 </script>
 </html>

@@ -48,7 +48,6 @@
     }
 }
 
-
 html {
     font-size: 100%;
     color-scheme: dark;
@@ -59,10 +58,9 @@ body {
     line-height: 24px;
     font-weight: 200;
     font-family: "JetBrains Mono";
-    background-color: #1F2023;
-    color: #F5F5F5;
+    background-color: #1f2023;
+    color: #f5f5f5;
 }
-
 
 h1 {
     margin-top: 0;
@@ -76,7 +74,6 @@ h1 {
     letter-spacing: 0;
 }
 
-
 @media (min-width: 550px) {
     h1 {
         font-size: 48px;
@@ -88,15 +85,13 @@ p {
     margin-top: 0;
 }
 
-
 a {
-    color: #4899F7;
+    color: #4899f7;
 }
 
 a:hover {
-    color: #7AB8FF;
+    color: #7ab8ff;
 }
-
 
 .version {
     display: inline-block;
@@ -105,6 +100,13 @@ a:hover {
     font-size: 85%;
 }
 
+@media (max-width: 550px) {
+    .version {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 80%;
+    }
+}
 
 code {
     padding: 0.2rem 0.5rem;
@@ -121,7 +123,6 @@ pre > code {
     padding: 1rem 1.5rem;
     white-space: pre;
 }
-
 
 button,
 .button {
@@ -144,7 +145,6 @@ ol {
     margin-bottom: 2.5rem;
 }
 
-
 .u-full-width {
     width: 100%;
     box-sizing: border-box;
@@ -163,14 +163,12 @@ ol {
     float: left;
 }
 
-
 hr {
     margin-top: 3rem;
     margin-bottom: 3.5rem;
     border-width: 0;
     border-top: 1px solid #e1e1e1;
 }
-
 
 .avatar {
     width: 128px;

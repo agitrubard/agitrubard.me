@@ -1,0 +1,43 @@
+/* Safari mobile specific fixes */
+@supports (-webkit-touch-callout: none) {
+  .container {
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  .text.link {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
+  .text.subtext {
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Improve touch targets for mobile */
+  .nav-item {
+    padding: 14px 16px;
+  }
+}
+
+/* Fix for Safari text rendering */
+@media not all and (min-resolution: .001dpcm) {
+  @supports (-webkit-appearance: none) {
+    body {
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+  }
+}
+

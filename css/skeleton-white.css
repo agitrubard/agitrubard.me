@@ -95,6 +95,9 @@ p {
 }
 
 .link {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 90%;
 }
 
 .subtext {

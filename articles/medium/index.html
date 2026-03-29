@@ -53,6 +53,12 @@
         <br>
         <br>
 
+        <a class="text link u-pull-left" href="https://medium.com/@agitrubard/passkeys-nedir-passwordless-life-e6ae061500f3"
+           id="scheduled-medium-post-link"
+           rel="noopener" style="display: none;" target="_blank">Passwordless Life 1.0: Parolaların Sonu mu Geldi?</a>
+        <a class="text subtext u-pull-left" id="scheduled-medium-post-date" style="display: none;">Published on March
+            31, 2026</a>
+
         <a class="text link u-pull-left"
            href="https://medium.com/@agitrubard/program-to-interface-not-an-implementation-peki-neden-6073c1b46c1b"
            rel="noopener" target="_blank">Program to Interface, Not an Implementation: Peki Neden?</a>
@@ -120,12 +126,19 @@
            target="_blank" rel="noopener">JPA/Hibernate ile Veritabanı İşlemlerinde Ekstra Scriptlerden Kaçınmak</a>
         <a class="text subtext u-pull-left">Published on June 14, 2024</a>
 
-        <span class="version">20251217.0</span>
+        <span class="version">20260331.0</span>
     </div>
 </div>
 </body>
 <script>
     document.addEventListener('contextmenu', event => event.preventDefault());
+
+    const ENABLE_SCHEDULED_MEDIUM_POST = true;
+    const mediumPostReleaseAt = new Date('2026-03-31T13:30:00+03:00');
+    const shouldShowScheduledPost = !ENABLE_SCHEDULED_MEDIUM_POST || new Date() >= mediumPostReleaseAt;
+    if (shouldShowScheduledPost) {
+        document.getElementById('scheduled-medium-post-link')?.style.removeProperty('display');
+        document.getElementById('scheduled-medium-post-date')?.style.removeProperty('display');
+    }
 </script>
 </html>
-
